@@ -1,6 +1,6 @@
 /*
  * grunt-reactify
- * 
+ *
  *
  * Copyright (c) 2015 Aymen Mouelhi
  * Licensed under the MIT license.
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
 
                     // Get destination file path
                     var fileName = path.substring(path.lastIndexOf('/'), path.length).replace('jsx', 'js');
-                    var dest = destination + path.substring(path.indexOf('/'), path.lastIndexOf('/')) + fileName;
+                    var dest = destination + fileName;
                     grunt.log.ok('File "' + dest + '" created.');
 
                     // Write file to destination
